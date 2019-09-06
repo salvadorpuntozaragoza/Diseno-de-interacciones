@@ -7,6 +7,7 @@ public class Pauser : MonoBehaviour {
 	[SerializeField] private bool muted = false;
 	[SerializeField] private bool paused = false;
 	[SerializeField] private GameObject pauseMenu;
+	[SerializeField] private GameObject HUD;
 	[SerializeField] private AudioSource music;
 
 	// Update is called once per frame
@@ -20,11 +21,13 @@ public class Pauser : MonoBehaviour {
 			music.volume = 0.1F;
 			Time.timeScale = 0;
 			pauseMenu.SetActive(true);
+			HUD.SetActive(false);
 		}
 		else{
 			music.volume = 0.5F;
 			Time.timeScale = 1;
 			pauseMenu.SetActive(false);
+			HUD.SetActive(true);
 		}
 	}
 
@@ -42,6 +45,6 @@ public class Pauser : MonoBehaviour {
 	}
 
 	public void Restart(){
-		SceneManager.LoadScene("Level");
+		SceneManager.LoadScene("3dEscena");
 	}
 }
