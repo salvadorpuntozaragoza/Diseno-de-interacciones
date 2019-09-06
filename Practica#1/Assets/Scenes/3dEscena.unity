@@ -395,6 +395,7 @@ MonoBehaviour:
     smooth: 0
     smoothTime: 5
     lockCursor: 1
+  cam: {fileID: 1657817228}
 --- !u!4 &380980344
 Transform:
   m_ObjectHideFlags: 0
@@ -625,7 +626,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30.8, y: -22.8}
+  m_AnchoredPosition: {x: 30.8, y: -8}
   m_SizeDelta: {x: 216, y: 17.100006}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &494432794
@@ -1539,7 +1540,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 30.8, y: -47.5}
+  m_AnchoredPosition: {x: 30.799988, y: -32.700012}
   m_SizeDelta: {x: 216, y: 17.100006}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1632082530
@@ -1579,6 +1580,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1632082528}
   m_CullTransparentMesh: 0
+--- !u!1 &1657817228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0,
+    type: 3}
+  m_PrefabInstance: {fileID: 851595300}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1660007254
 GameObject:
   m_ObjectHideFlags: 0
@@ -1947,7 +1954,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 14.599976, y: -67.7}
+  m_AnchoredPosition: {x: 14.599976, y: -52.90001}
   m_SizeDelta: {x: 30.799988, y: 34.100006}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1810617252

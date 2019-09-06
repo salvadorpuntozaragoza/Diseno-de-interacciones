@@ -12,6 +12,7 @@ public class Pauser : MonoBehaviour {
     [SerializeField] private AudioSource music;
     [SerializeField] private GameObject fps;
     [SerializeField] private MouseLook mouse;
+    [SerializeField] private GameObject cam;
 
     private void Start()
     {
@@ -31,6 +32,7 @@ public class Pauser : MonoBehaviour {
 			pauseMenu.SetActive(true);
 			HUD.SetActive(false);
             mouse.lockCursor = false;
+            cam.SetActive(false);
 		}
 		else{
 			music.volume = 0.5F;
@@ -38,6 +40,7 @@ public class Pauser : MonoBehaviour {
 			pauseMenu.SetActive(false);
 			HUD.SetActive(true);
             mouse.lockCursor = true;
+            cam.SetActive(true);
 		}
 	}
 
