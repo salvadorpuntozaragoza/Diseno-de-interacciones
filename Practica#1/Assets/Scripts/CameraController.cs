@@ -13,8 +13,8 @@ public class CameraController : MonoBehaviour
 
     void Start()
     {
-        Cusror.visible = false;
-        Cursor.LockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
     // Update is called once per frame
@@ -24,6 +24,6 @@ public class CameraController : MonoBehaviour
         mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
         mouseY = Mathf.Clamp(mouseY, limitY.x, limitY.y);
         cameraTarget.rotation = Quaternion.Euler(mouseY, mouseX, 0);
-        Transform.LookAt(cameraTarget);
+        //Transform.LookAt(cameraTarget,limitY);
     }
 }
