@@ -24,6 +24,6 @@ public class CameraController : MonoBehaviour
         mouseY = Input.GetAxis("Mouse Y") * rotationSpeed;
         mouseY = Mathf.Clamp(mouseY, limitY.x, limitY.y);
         cameraTarget.rotation = Quaternion.Euler(mouseY, mouseX, 0);
-        //Transform.LookAt(cameraTarget,limitY);
+        cameraTarget.LookAt(cameraTarget,limitY);
     }
 }
