@@ -12,12 +12,14 @@ public class collideDetection : MonoBehaviour
       entered = false;
     }
 
-    void OnTriggerEntered(Collider c){
-      entered = true;
+    void OnTriggerEnter(Collider c){
+        Renderer render = GetComponent<Renderer>();
+        render.material.color = Color.blue;
     }
 
-    void OnTriggerExited(Collider c){
-      entered = false;
+    void OnTriggerExit(Collider c){
+        Renderer render = GetComponent<Renderer>();
+        render.material.color = Color.white;
     }
 
     // Update is called once per frame
