@@ -4,22 +4,26 @@ using UnityEngine;
 
 public class collideDetection : MonoBehaviour
 {
+    [SerializeField] private GameObject text;
+    [SerializeField] private AudioSource sfx;
 
-  [SerializeField] private bool entered;
     // Start is called before the first frame update
     void Start()
     {
-      entered = false;
     }
 
     void OnTriggerEnter(Collider c){
-        Renderer render = GetComponent<Renderer>();
-        render.material.color = Color.blue;
+        if (c.CompareTag("Player"))
+        {
+            Debug.Log("Collision detected");
+            text.SetActive(true);
+            sfx.Play();
+        }
     }
 
     void OnTriggerExit(Collider c){
-        Renderer render = GetComponent<Renderer>();
-        render.material.color = Color.white;
+        if (c.CompareTag("Player"))
+            text.SetActive(false);
     }
 
     // Update is called once per frame
