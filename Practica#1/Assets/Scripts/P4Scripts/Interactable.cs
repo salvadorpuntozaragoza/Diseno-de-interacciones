@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Interactable : MonoBehaviour 
+public class Interactable : MonoBehaviour
 {
 	bool isInsideZone;
 	public KeyCode interactionKey = KeyCode.I;
+	public string buttonName =  "Interact";
+
 	/// <summary>
 	/// Update is called every frame, if the MonoBehaviour is enabled.
 	/// </summary>
@@ -13,12 +15,22 @@ public class Interactable : MonoBehaviour
 	{
 		if(isInsideZone)
 		{
-			if(Input.GetKeyDown(interactionKey))
+			//if(Input.GetKeyDown(interactionKey))
+			if(Input.GetButtonDown(buttonName))
 			{
 				Interact();
 			}
 		}
 	}
+
+//Intercat: name
+//possitive button: I
+
+//second stick
+//hopriozntal axis name : Mouse X
+//vertical axis name: Mouse Y
+
+//second button: intercact button
 
 	/// <summary>
 	/// OnTriggerEnter is called when the Collider other enters the trigger.
