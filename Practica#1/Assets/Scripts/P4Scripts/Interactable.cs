@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityStandardAssets.CrossPlatformInput;
 
 public class Interactable : MonoBehaviour
 {
 	bool isInsideZone;
-	public KeyCode interactionKey = KeyCode.I;
+	//public KeyCode interactionKey = KeyCode.I;
 	public string buttonName =  "Interact";
 
 	/// <summary>
@@ -16,8 +17,9 @@ public class Interactable : MonoBehaviour
 		if(isInsideZone)
 		{
 			//if(Input.GetKeyDown(interactionKey))
-			if(Input.GetButtonDown(buttonName))
+			if(CrossPlatformInputManager.GetButtonDown(buttonName))
 			{
+                Debug.Log("Interact key pressed");
 				Interact();
 			}
 		}
