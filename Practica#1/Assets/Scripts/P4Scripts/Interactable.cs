@@ -7,7 +7,7 @@ public class Interactable : MonoBehaviour
 {
 	bool isInsideZone;
 	//public KeyCode interactionKey = KeyCode.I;
-	public string buttonName =  "Interact";
+	//public string buttonName =  "Interact";
 
 	/// <summary>
 	/// Update is called every frame, if the MonoBehaviour is enabled.
@@ -16,10 +16,11 @@ public class Interactable : MonoBehaviour
 	{
 		if(isInsideZone)
 		{
+            
 			//if(Input.GetKeyDown(interactionKey))
-			if(CrossPlatformInputManager.GetButtonDown(buttonName))
+			if(CrossPlatformInputManager.GetButtonDown("Interact"))
 			{
-                Debug.Log("Interact key pressed");
+                Debug.Log("Interact button pressed");
 				Interact();
 			}
 		}

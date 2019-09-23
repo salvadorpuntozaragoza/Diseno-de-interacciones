@@ -33,6 +33,7 @@ public class InventoryUI : MonoBehaviour
 		if(CrossPlatformInputManager.GetButtonDown("Inventory"))
 		{
 			Debug.Log("UI Off");
+            Debug.Log("Inventory button pressed");
 			inventoryPanel.SetActive(!inventoryPanel.activeSelf);
             UpdateUI();
 		}
