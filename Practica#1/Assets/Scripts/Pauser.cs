@@ -6,50 +6,52 @@ using UnityStandardAssets.Characters.FirstPerson;
 using UnityStandardAssets.CrossPlatformInput;
 
 public class Pauser : MonoBehaviour {
-    [SerializeField] private bool muted = false;
-    [SerializeField] private bool paused = false;
+    private bool muted = false;
+    private bool paused = false;
     [SerializeField] private GameObject pauseMenu;
-    [SerializeField] private GameObject HUD;
     [SerializeField] private AudioSource music;
-    [SerializeField] private GameObject fps;
-    [SerializeField] private MouseLook mouse;
-    [SerializeField] private GameObject cam;
     [SerializeField] private GameObject movilInterface;
 
     private void Start()
     {
         //mouse.lockCursor = true;
+        pauseMenu.SetActive(false);
+        Debug.Log("Pause menu falsed");
+        movilInterface.SetActive(true);
+        Debug.Log("movil interface on");
     }
 
     // Update is called once per frame
     void Update () {
 		if(CrossPlatformInputManager.GetButtonDown("Pause"))
 		{
+            Debug.Log("Pause button clicked");
 			paused = !paused;
-		}
-
-		if(paused){
-            //movilInterface.SetActive(false);
-			music.volume = 0.1F;
-			Time.timeScale = 0;
-			pauseMenu.SetActive(true);
-			//HUD.SetActive(false);
-            //mouse.lockCursor = false;
-            //cam.SetActive(false);
-		}
-		else{
-            //movilInterface.SetActive(true);
-			music.volume = 0.5F;
-			Time.timeScale = 1;
-			pauseMenu.SetActive(false);
-			//HUD.SetActive(true);
-            //mouse.lockCursor = true;
-            //cam.SetActive(true);
+            updateInterfaces();
 		}
 	}
 
+    void updateInterfaces()
+    {
+        if (paused)
+        {
+            movilInterface.SetActive(false);
+            music.volume = 0.1F;
+            Time.timeScale = 0;
+            pauseMenu.SetActive(true);
+        }
+        else
+        {
+            movilInterface.SetActive(true);
+            music.volume = 0.5F;
+            Time.timeScale = 1;
+            pauseMenu.SetActive(false);
+        }
+    }
+
 	public void Resume(){
 		paused = false;
+        updateInterfaces();
 	}
 
 	public void Mute(){

@@ -37,7 +37,13 @@ public class InventoryUI : MonoBehaviour
 			inventoryPanel.SetActive(!inventoryPanel.activeSelf);
             UpdateUI();
 		}
-	}
+
+        if (CrossPlatformInputManager.GetButtonDown("Pause"))
+        {
+            Debug.Log("Pause button clicked");
+        }
+
+    }
 
 	void UpdateUI()
 	{
