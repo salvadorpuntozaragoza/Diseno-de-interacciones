@@ -12,7 +12,7 @@ public class Transporter : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        distance = 2f;
+        distance = 5f;
         isGazed = false; 
     }
 

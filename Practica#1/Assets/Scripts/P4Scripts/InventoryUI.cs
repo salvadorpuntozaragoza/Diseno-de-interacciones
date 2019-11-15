@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityStandardAssets.CrossPlatformInput;
 
 public class InventoryUI : MonoBehaviour
 {
@@ -29,8 +28,7 @@ public class InventoryUI : MonoBehaviour
 	/// </summary>
 	void Update()
 	{
-		//if(Input.GetKeyDown(KeyCode.Q))
-		if(CrossPlatformInputManager.GetButtonDown("Inventory"))
+		if(Input.GetKeyDown(KeyCode.Q))
 		{
 			Debug.Log("UI Off");
             Debug.Log("Inventory button pressed");
@@ -38,7 +36,7 @@ public class InventoryUI : MonoBehaviour
             UpdateUI();
 		}
 
-        if (CrossPlatformInputManager.GetButtonDown("Pause"))
+        if (Input.GetKeyDown(KeyCode.P))
         {
             Debug.Log("Pause button clicked");
         }

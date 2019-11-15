@@ -10,20 +10,21 @@ public class Pauser : MonoBehaviour {
     private bool paused = false;
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private AudioSource music;
-    [SerializeField] private GameObject movilInterface;
+    //[SerializeField] private GameObject movilInterface;
 
     private void Start()
     {
         //mouse.lockCursor = true;
         pauseMenu.SetActive(false);
         Debug.Log("Pause menu falsed");
-        movilInterface.SetActive(true);
+        //movilInterface.SetActive(true);
         Debug.Log("movil interface on");
     }
 
     // Update is called once per frame
     void Update () {
-		if(CrossPlatformInputManager.GetButtonDown("Pause"))
+		//if(CrossPlatformInputManager.GetButtonDown("Pause"))
+        if(Input.GetKeyDown(KeyCode.P))
 		{
             Debug.Log("Pause button clicked");
 			paused = !paused;
@@ -35,14 +36,14 @@ public class Pauser : MonoBehaviour {
     {
         if (paused)
         {
-            movilInterface.SetActive(false);
+            //movilInterface.SetActive(false);
             music.volume = 0.1F;
             Time.timeScale = 0;
             pauseMenu.SetActive(true);
         }
         else
         {
-            movilInterface.SetActive(true);
+            //movilInterface.SetActive(true);
             music.volume = 0.5F;
             Time.timeScale = 1;
             pauseMenu.SetActive(false);
@@ -64,6 +65,6 @@ public class Pauser : MonoBehaviour {
 	}
 
 	public void Restart(){
-		SceneManager.LoadScene("InventoryScene");
+		SceneManager.LoadScene("Practica #4");
 	}
 }

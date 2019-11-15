@@ -17,8 +17,8 @@ public class Interactable : MonoBehaviour
 		if(isInsideZone)
 		{
             
-			//if(Input.GetKeyDown(interactionKey))
-			if(CrossPlatformInputManager.GetButtonDown("Interact"))
+			if(Input.GetKeyDown(KeyCode.E))
+			//if(CrossPlatformInputManager.GetButtonDown("Interact"))
 			{
                 Debug.Log("Interact button pressed");
 				Interact();
