@@ -1,0 +1,207 @@
+fileFormatVersion: 2
+guid: 7b6f60ac734326e4e8ba28d79fe6accf
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: _002_Body_LOD2
+    100002: ArmL
+    100004: ArmR
+    100006: Body_LOD0
+    100008: Body_LOD0_end
+    100010: Body_LOD1
+    100012: Body_LOD1_end
+    100014: Body_LOD2
+    100016: Body_LOD2_end
+    100018: ElbowL
+    100020: ElbowR
+    100022: Finger1L
+    100024: Finger1R
+    100026: Finger2L
+    100028: Finger2L_end
+    100030: Finger2R
+    100032: Finger2R_end
+    100034: FootL
+    100036: FootL_end
+    100038: FootR
+    100040: FootR_end
+    100042: HandL
+    100044: HandR
+    100046: Head
+    100048: Hip
+    100050: Hip_end
+    100052: KneeL
+    100054: KneeL_end
+    100056: KneeR
+    100058: KneeR_end
+    100060: LegL
+    100062: LegL_end
+    100064: LegR
+    100066: LegR_end
+    100068: Mouth
+    100070: Mouth_end
+    100072: Obi
+    100074: Obi_end
+    100076: //RootNode
+    100078: PeachKimono_Prefab
+    100080: ShoulderL
+    100082: ShoulderR
+    100084: Skl_Root
+    100086: SleeveL
+    100088: SleeveL_end
+    100090: SleeveR
+    100092: SleeveR_end
+    100094: Spine1
+    100096: Spine2
+    100098: Thumb1L
+    100100: Thumb1R
+    100102: Thumb2L
+    100104: Thumb2L_end
+    100106: Thumb2R
+    100108: Thumb2R_end
+    400000: _002_Body_LOD2
+    400002: ArmL
+    400004: ArmR
+    400006: Body_LOD0
+    400008: Body_LOD0_end
+    400010: Body_LOD1
+    400012: Body_LOD1_end
+    400014: Body_LOD2
+    400016: Body_LOD2_end
+    400018: ElbowL
+    400020: ElbowR
+    400022: Finger1L
+    400024: Finger1R
+    400026: Finger2L
+    400028: Finger2L_end
+    400030: Finger2R
+    400032: Finger2R_end
+    400034: FootL
+    400036: FootL_end
+    400038: FootR
+    400040: FootR_end
+    400042: HandL
+    400044: HandR
+    400046: Head
+    400048: Hip
+    400050: Hip_end
+    400052: KneeL
+    400054: KneeL_end
+    400056: KneeR
+    400058: KneeR_end
+    400060: LegL
+    400062: LegL_end
+    400064: LegR
+    400066: LegR_end
+    400068: Mouth
+    400070: Mouth_end
+    400072: Obi
+    400074: Obi_end
+    400076: //RootNode
+    400078: PeachKimono_Prefab
+    400080: ShoulderL
+    400082: ShoulderR
+    400084: Skl_Root
+    400086: SleeveL
+    400088: SleeveL_end
+    400090: SleeveR
+    400092: SleeveR_end
+    400094: Spine1
+    400096: Spine2
+    400098: Thumb1L
+    400100: Thumb1R
+    400102: Thumb2L
+    400104: Thumb2L_end
+    400106: Thumb2R
+    400108: Thumb2R_end
+    2100000: M_PeachKimono_Body
+    4300000: _002_Body_LOD2
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: _002_Body_LOD2
+    2186277476908879412: ImportLogs
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.0254
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
