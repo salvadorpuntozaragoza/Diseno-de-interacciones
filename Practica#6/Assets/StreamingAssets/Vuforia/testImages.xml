@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
+  <Tracking>
+    <ImageTarget name="idCard" size="0.050000 0.079209" />
+    <ImageTarget name="amarillo" size="0.050000 0.083404" />
+    <ImageTarget name="imageTarget" size="0.050000 0.030416" />
+  </Tracking>
+</QCARConfig>
